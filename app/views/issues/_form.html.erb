@@ -21,7 +21,12 @@
     <%= form.text_area :body, id: :issue_body, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit class: "btn btn-primary" %>
+  <div class="form-group">
+    <%= form.check_box :resolved, id: :issue_resolved %>
+    <%= form.label :resolved %>
   </div>
+
+  <p class="actions">
+  <%= form.submit class: "btn btn-primary" %>
+  </p>
 <% end %>

@@ -1,6 +1,16 @@
 class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
 
+  def resolve
+    @issue = Issue.find(params[:id])
+    respond_to do |format|
+      if @issue.update_attributes(resolved: !@issue.resolved)
+        format.html { redirect_to action: :show }
+        format.js
+      end
+    end
+  end
+
   # GET /issues
   # GET /issues.json
   def index
@@ -69,6 +79,6 @@ class IssuesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def issue_params
-      params.require(:issue).permit(:title, :body)
+      params.require(:issue).permit(:title, :body, :resolved)
     end
 end

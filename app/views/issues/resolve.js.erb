@@ -1,0 +1,15 @@
+console.log('<%= @issue.resolved %>');
+
+el = document.getElementById('resolve_button')
+
+<% if @issue.resolved %>
+  el.textContent = 'Reopen Issue'
+  el.classList.add('btn-danger')
+  el.classList.remove('btn-warning')
+<% else %>
+  el.textContent = 'Resolve Issue'
+  el.classList.add('btn-warning')
+  el.classList.remove('btn-danger')
+<% end %>
+
+document.getElementById('issue_resolved_status').textContent = "<%= @issue.resolved %>"

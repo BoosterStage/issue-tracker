@@ -10,5 +10,16 @@
   <%= @issue.body %>
 </p>
 
+<p>
+  <strong>Resolved:</strong>
+  <span id="issue_resolved_status"><%= @issue.resolved %></span>
+</p>
+
+<p>
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
 <%= link_to 'Back', issues_path %>
+</p>
+
+<p>
+  <%= link_to "Resolve Issue", resolve_issue_path, method: :put, remote: true, class: "btn btn-warning", id: 'resolve_button' %>
+</p>
