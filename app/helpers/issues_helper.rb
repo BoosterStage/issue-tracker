@@ -1,6 +1,6 @@
 module IssuesHelper
   def resolve_issue_button(issue)
-    link_to "#{issue.resolved? ? 'Reopen' : 'Resolve'} Issue", resolve_issue_path,
+    link_to "#{issue.resolved? ? 'Reopen' : 'Resolve'} Issue", resolve_issue_path(issue),
             method: :put, 
             remote: true, 
             class: resolve_issue_button_class(issue), 
