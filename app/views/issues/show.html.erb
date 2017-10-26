@@ -21,5 +21,9 @@
 </p>
 
 <p>
-  <%= link_to "Resolve Issue", resolve_issue_path, method: :put, remote: true, class: "btn btn-warning", id: 'resolve_button' %>
+  <% if @issue.resolved? %>
+    <%= link_to "Reopen Issue", resolve_issue_path, method: :put, remote: true, class: "btn btn-danger", id: 'resolve_button' %>
+  <% else %>
+    <%= link_to "Resolve Issue", resolve_issue_path, method: :put, remote: true, class: "btn btn-warning", id: 'resolve_button' %>
+  <% end %>
 </p>
