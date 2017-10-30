@@ -3,16 +3,24 @@ module IssuesHelper
     link_to "#{issue.resolved? ? 'Reopen' : 'Resolve'} Issue", resolve_issue_path(issue),
             method: :put, 
             remote: true, 
-            class: resolve_issue_button_class(issue), 
+            class: "btn btn-secondary",
             id: 'resolve_button'
   end
 
+  def resolve_issue_badge(issue)
+    str = issue.resolved? ? 'Resolved' : 'Open'
+    content_tag :span, str, 
+      class: "badge badge-#{issue.resolved? ? 'danger' : 'success'}",
+      id: 'issue_resolved_status'
+  end
+
   private
-  def resolve_issue_button_class(issue)
+
+  def resolve_issue_class(issue)
     if issue.resolved?
-      'btn btn-danger'  # Red button
+      'danger'  # Red button
     else
-      'btn btn-warning' # Orange button
+      'success' # Green button
     end
   end
 end
