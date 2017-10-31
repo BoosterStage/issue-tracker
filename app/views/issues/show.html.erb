@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <div class="d-flex flex-row justify-content-between">
-  <div class="p-2">
+  <div>
     <h1><%= @issue.title %></h1>
     <%= resolve_issue_badge(@issue) %>
   </div>
 
-  <div class="p-2">
-    <%= link_to 'Edit', edit_issue_path(@issue), class: "btn btn-secondary" %> 
+  <div>
+    <%= link_to 'Edit', edit_issue_path(@issue), class: 'btn btn-secondary' %> 
     <%= link_to 'New Issue', new_issue_path, class: 'btn btn-success' %>
   </div>
 </div>
