@@ -1,0 +1,9 @@
+// Render the comment partial to a string 
+var commentHtml = '<%= escape_javascript(render @comment) %>';
+
+// Append the comment string to the top of the list of comments
+var commentList = document.getElementById('comments');
+commentList.insertAdjacentHTML('beforebegin', commentHtml);
+
+// Clear the form
+document.getElementById('commentForm').reset();

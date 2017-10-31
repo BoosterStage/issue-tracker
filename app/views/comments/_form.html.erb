@@ -1,7 +1,7 @@
 <div class="card my-4">
   <h5 class="card-header">Leave a Comment:</h5>
   <div class="card-body">
-    <%= form_with model: new_comment, local: false do |form| %>
+    <%= form_with model: new_comment, local: false, id: 'commentForm' do |form| %>
       <div class="form-group">
         <%= form.text_area :body, rows: '3', class: 'form-control' %>
       </div>
