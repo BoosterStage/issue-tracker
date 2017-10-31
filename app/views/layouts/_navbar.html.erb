@@ -12,5 +12,11 @@
         </a>
       </li>
     </ul>
+    <% if user_signed_in? %>
+      <span class="navbar-text">
+        Logged in as 
+        <%= current_user.email %>
+      </span>
+    <% end %>
   </div>
 </nav>
