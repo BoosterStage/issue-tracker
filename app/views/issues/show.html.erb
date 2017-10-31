@@ -18,3 +18,10 @@
 
 <%= resolve_issue_button(@issue) %>
 
+<hr>
+
+<%= render partial: 'comments/form' %>
+
+<div class='comments'>
+  <%= render @issue.comments %>
+</div>

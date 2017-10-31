@@ -1,4 +1,9 @@
 module IssuesHelper
+  
+  def new_comment
+    @comment ||= Comment.new(issue: @issue)
+  end
+
   def resolve_issue_button(issue)
     link_to "#{issue.resolved? ? 'Reopen' : 'Resolve'} Issue", resolve_issue_path(issue),
             method: :put, 
