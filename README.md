@@ -16,6 +16,19 @@ Want to see what we'll be building? Head over to the example app at https://issu
 ![Screenshot of issue list](https://i.imgur.com/UZcpi0J.png)
 ![Screenshot of issue detail page](https://i.imgur.com/dYWMAVa.png)
 
+## Cloud9
+
+Unless you've already got a Ruby on Rails environment set up on your computer, the easiest way to get started is to use Cloud9. Just go to https://c9.io/ and sign up for a new account. 
+
+### Clone the working app
+
+If you'd like to take a look at the code behind the finished app you can clone our repository into your own workspace. 
+
+1. Go to https://c9.io/boosterstage
+2. Click "Clone"
+3. Click "Create workspace"
+
+
 # In this course you will learn: 
 
 - How to rapidly prototype a dynamic web application using Ruby on Rails. 
@@ -51,6 +64,8 @@ Want to see what we'll be building? Head over to the example app at https://issu
 # Who’s behind this? 
 
 This course is created by [Ryan Heneise](https://github.com/crispinheneise) and hosted by [Inventive](https://inventive.io). 
+
+Ryan Heneise crafts top-quality web-based software products for bootstrapped startups. He is the owner and principal developer of [Booster Stage](https://boosterstage.net), a serial entrepreneur, and professional Ruby on Rails developer. 
 
 For more information, contact [ryan@boosterstage.net](mailto:ryan@boosterstage.net). 
 
