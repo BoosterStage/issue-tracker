@@ -8,6 +8,13 @@ We’re going to learn the popular and powerful Ruby on Rails.
 
 This is a hands-on, interactive, live course where we’ll introduce everything that you need to know to start coding Ruby on Rails apps. 
 
+# Example App
+
+Want to see what we'll be building? Head over to the example app at https://issue-tracker-rails-workshop.herokuapp.com/. You'll need to sign up for the app - just click "Sign up" under the login form and enter your email address and a password. 
+
+![Screenshot of login form](https://i.imgur.com/yRsspXy.png)
+![Screenshot of issue list](https://i.imgur.com/UZcpi0J.png)
+![Screenshot of issue detail page](https://i.imgur.com/dYWMAVa.png)
 
 # In this course you will learn: 
 
